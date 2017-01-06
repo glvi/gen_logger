@@ -1,12 +1,15 @@
 {application, gen_logger,
  [
   {description, "Erlang gen_logger behaviour"},
-  {vsn, "1.2"},
+  {vsn, "1.2.1"},
   {modules, []},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
                  ]},
-  {env, []}
- ]}.
+  {env, []},
+  {maintainers, ["Feng Lee <feng@emqtt.io>"]},
+  {licenses, ["MIT"]},
+  {links, [{"Github", "https://github.com/emqtt/gen_logger"}]}
+]}.
