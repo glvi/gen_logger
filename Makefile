@@ -1,9 +1,9 @@
 all: compile
 
-get-deps:
+deps:
 	rebar get-deps
 
-compile:
+compile: deps
 	rebar compile
 	
 eunit:
