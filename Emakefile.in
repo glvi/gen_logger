@@ -1,0 +1,2 @@
+%% -*- mode: erlang; coding: utf-8; indent-tabs-mode: nil; -*-
+{[@gen_logger_modules@],[{i,"@gen_logger_include_dir@"},{outdir,"@gen_logger_binary_dir@"}]}.

@@ -2,7 +2,11 @@
  [
   {description, "Erlang gen_logger behaviour"},
   {vsn, "1.2"},
-  {modules, []},
+  {modules, 
+   [gen_logger,
+    console_logger,
+    error_logger_logger,
+    lager_logger]},
   {registered, []},
   {applications, [
                   kernel,
