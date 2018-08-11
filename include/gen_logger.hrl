@@ -30,12 +30,12 @@
 
 -define(LOG_LEVEL_NUM(Level),
     case Level of
-        all -> ?LOG_ALL;
-        debug -> ?LOG_DEBUG;
-        info -> ?LOG_INFO;
-        warning -> ?LOG_WARNING;
-        error -> ?LOG_ERROR;
+        all      -> ?LOG_ALL;
+        debug    -> ?LOG_DEBUG;
+        info     -> ?LOG_INFO;
+        warning  -> ?LOG_WARNING;
+        error    -> ?LOG_ERROR;
         critical -> ?LOG_CRITICAL;
-        none -> ?LOG_NONE
+        none     -> ?LOG_NONE
     end).
 

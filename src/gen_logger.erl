@@ -43,9 +43,11 @@
 
 -type(level() :: all | debug | info | warning | error | critical | none).
 
+-type(level_num() :: ?LOG_ALL | ?LOG_DEBUG | ?LOG_INFO | ?LOG_WARNING | ?LOG_ERROR | ?LOG_CRITICAL | ?LOG_NONE).
+
 -type(logcfg() :: level() | {module(), level()}).
 
--type(logmod() :: {gen_logger, module(), level()}).
+-type(logmod() :: {gen_logger, module(), level_num()}).
 
 -export_type([level/0, logcfg/0, logmod/0]).
 
