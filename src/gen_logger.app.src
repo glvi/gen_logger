@@ -5,8 +5,7 @@
   {modules, 
    [gen_logger,
     console_logger,
-    error_logger_logger,
-    lager_logger]},
+    error_logger_logger]},
   {registered, []},
   {applications, [
                   kernel,
