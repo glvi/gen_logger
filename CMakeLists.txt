@@ -24,7 +24,7 @@ add_custom_target(EmqttLogger
   DEPENDS    ${GEN_LOGGER_SOURCES}
   COMMAND    ${CMAKE_COMMAND} -E make_directory ${gen_logger_binary_dir}
   COMMAND    ${CMAKE_COMMAND} -E copy_directory ${gen_logger_include_dir} ${CMAKE_CURRENT_BINARY_DIR}
-  COMMAND    ${ERLANG_PROGRAM} -sasl errlog_type error -make
+  COMMAND    ${ERLANG_PROGRAM} -pa ${gen_logger_binary_dir} -sasl errlog_type error -make
   WORKING_DIRECTORY ${gen_logger_source_dir}
   VERBATIM
   COMMAND_EXPAND_LISTS)
